@@ -21,6 +21,13 @@ Under active development.
 | GET | `/health` | Checks whether the application is running. |
 | GET | `/api/v1/system/info` | Returns public API information. |
 
+## Architecture
+
+LeaveFlow is being developed as a modular monolith with versioned API routes.
+
+For detailed architecture decisions and the current request flow, see
+[Architecture](docs/architecture.md).
+
 ## Getting Started
 
 ### Requirements
