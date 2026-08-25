@@ -6,15 +6,30 @@ LeaveFlow is a REST API for managing employee leave requests and approval workfl
 
 Under active development.
 
-## Planned Core Features
+## Current Tech Stack
 
-- JWT-based authentication and role-based authorization
-- Team and user management
-- Leave request approval workflow
-- Validation for overlapping leave requests
-- Filtering and pagination
-- Automated tests and containerized development
+- Python 3.12
+- FastAPI
+- Pydantic
+- uv
+- Ruff
 
-## Tech Stack
+## Available Endpoints
 
-Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, Pydantic, Pytest, Docker, and GitHub Actions.
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | `/health` | Checks whether the application is running. |
+| GET | `/api/v1/system/info` | Returns public API information. |
+
+## Getting Started
+
+### Requirements
+
+- Python 3.12
+- uv
+
+### Run Locally
+
+```bash
+uv sync
+uv run fastapi dev app/main.py
