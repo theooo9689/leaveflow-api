@@ -5,6 +5,7 @@ description = "REST API for managing employee leave requests and approval workfl
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "alembic>=1.19.0,<1.20.0",
     "fastapi[standard]>=0.115.0,<1.0.0",
     "psycopg[binary]>=3.2,<4.0",
     "pydantic-settings>=2.6.0,<3.0.0",
